@@ -1,7 +1,7 @@
 {
   "name": "@juniorcitizen1978/better-sqlite3",
   "description": "connection helper library for better-sqlite3",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "author": "David Tsai <juniorcitizen1978@gmail.com>",
   "license": "UNLICENSED",
   "private": false,
@@ -23,10 +23,10 @@
   },
   "imports": {},
   "dependencies": {
-    "better-sqlite3": "^12.5.0"
+    "better-sqlite3": "^12.5.0",
+    "@types/better-sqlite3": "^7.6.13"
   },
   "devDependencies": {
-    "@types/better-sqlite3": "^7.6.13",
     "@types/node": "latest",
     "rimraf": "latest",
     "typescript": "latest"
