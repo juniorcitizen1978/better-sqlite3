@@ -1,6 +1,8 @@
 import betterSqlite3 from 'better-sqlite3'
 import * as path from 'node:path'
 
+export type {Database, Statement} from 'better-sqlite3'
+
 let connection: betterSqlite3.Database | undefined = undefined
 
 export function connect(filePath?: string): void {

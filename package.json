@@ -1,7 +1,7 @@
 {
   "name": "@juniorcitizen1978/better-sqlite3",
   "description": "connection helper library for better-sqlite3",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "author": "David Tsai <juniorcitizen1978@gmail.com>",
   "license": "UNLICENSED",
   "private": false,

@@ -1,6 +1,8 @@
 import betterSqlite3 from 'better-sqlite3'
 import * as path from 'node:path'
 
+export type {Database, Statement} from 'better-sqlite3'
+
 const connections = new Map<string, betterSqlite3.Database>()
 
 export function connect(connectionName: string, filePath?: string): void {
