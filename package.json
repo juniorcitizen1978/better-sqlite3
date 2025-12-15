@@ -1,7 +1,7 @@
 {
   "name": "@juniorcitizen1978/better-sqlite3",
   "description": "connection helper library for better-sqlite3",
-  "version": "0.1.0-alpha.3",
+  "version": "0.1.0-alpha.4",
   "author": "David Tsai <juniorcitizen1978@gmail.com>",
   "license": "UNLICENSED",
   "private": false,
@@ -10,6 +10,11 @@
     "./dist"
   ],
   "exports": {
+    ".": {
+      "types": "./dist/single-connection.d.ts",
+      "import": "./dist/single-connection.js",
+      "default": "./src/single-connection.ts"
+    },
     "./multi-connections": {
       "types": "./dist/multi-connections.d.ts",
       "import": "./dist/multi-connections.js",
@@ -33,6 +38,7 @@
   },
   "scripts": {
     "check": "tsc --noEmit",
-    "build": "rimraf ./dist && tsc"
+    "build": "rimraf ./dist && tsc",
+    "prepublishOnly": "npm run build"
   }
 }
